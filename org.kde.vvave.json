@@ -57,7 +57,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.1.0/mauikit-accounts-2.1.0.tar.x",
+                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.1.0/mauikit-accounts-2.1.0.tar.xy",
                     "sha256": "21bce5964d17eaa548c8e6de0298cd1c76bff495308e8de954e399c7fc2f7f4c"
                 }
             ]

@@ -40,7 +40,7 @@
                 }
             ]
         },
-          {
+        {
             "name": "mauikit-filebrowsing",
             "buildsystem": "cmake-ninja",
             "sources": [
@@ -48,6 +48,17 @@
                     "type": "archive",
                     "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/2.1.0/mauikit-filebrowsing-2.1.0.tar.xz",
                     "sha256": "273171a0148d83540f3a2c73b7b0ef3be14586948f6e829b270e30146bb9af43"
+                }
+            ]
+        },
+        {
+            "name": "mauikit-account",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/maui/mauikit-account/2.1.0/mauikit-account-2.1.0.tar.xz",
+                    "sha256": "21bce5964d17eaa548c8e6de0298cd1c76bff495308e8de954e399c7fc2f7f4c"
                 }
             ]
         },

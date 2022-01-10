@@ -35,44 +35,19 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "3af24f8f8ac85a3215092d6014e60e324f400bbd96d8135ee273cf1d86dedef6",
-                    "url": "https://download.kde.org/stable/maui/mauikit/1.2.2/mauikit-1.2.2.tar.xz"
+                    "sha256": "577b999de9ee07e7db26b6686890bed9324d64823c2014315193ed39e183e355",
+                    "url": "https://download.kde.org/stable/maui/mauikit/2.1.0/mauikit-2.1.0.tar.xz"
                 }
             ]
         },
-        {
+          {
             "name": "mauikit-filebrowsing",
-             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/1.2.2/mauikit-filebrowsing-1.2.2.tar.xz",
-                    "sha256": "22301e96514f5dd83e0b6dc0aefe15dc11ad05edb7bfdf5a891de55fd2414da0"
-                }
-            ]
-        },
-        {
-            "name": "kdecoration",
-             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "archive",
-                    "sha256": "bc550b7bfde5b5762e76b33ac53f8268b6178ae389c953d729b864b22787d54c",
-                    "url": "https://download.kde.org/stable/plasma/5.21.5/kdecoration-5.21.5.tar.xz"
-                }
-            ]
-        },
-        {
-            "name": "applet-window-buttons",
-             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/psifidotos/applet-window-buttons/archive/refs/tags/0.9.0.tar.gz",
-                    "sha256": "053201441e2cc7c0589c920028b985752ad9a87dc0f7fb35070cf44c9fcfbab7"
+                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/2.1.0/mauikit-filebrowsing-2.1.0.tar.xz",
+                    "sha256": "273171a0148d83540f3a2c73b7b0ef3be14586948f6e829b270e30146bb9af43"
                 }
             ]
         },
@@ -83,8 +58,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/vvave/1.2.2/vvave-1.2.2.tar.xz",
-                    "sha256": "b0f987e83884b103ab668697c9a220144445c4379d8823905d42e319abe2b46f"
+                    "url": "https://download.kde.org/stable/maui/vvave/2.1.0/vvave-2.1.0.tar.xz",
+                    "sha256": "73215b9fefca98f987845c5d7a9d206be45e16596a0b74d6c76bcadb1483b610"
                 },
                 {
                     "type": "patch",

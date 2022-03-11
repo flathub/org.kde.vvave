@@ -17,14 +17,16 @@
     ],
     "modules": [
         {
-            "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
             "name": "taglib",
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://taglib.github.io/releases/taglib-1.11.1.tar.gz",
-                    "sha256": "b6d1a5a610aae6ff39d93de5efd0fdc787aa9e9dc1e7026fa4c961b26563526b",
+                    "url": "https://taglib.github.io/releases/taglib-1.12.tar.gz",
+                    "sha256": "7fccd07669a523b07a15bd24c8da1bbb92206cb19e9366c3692af3d79253b703",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1982,
@@ -36,13 +38,15 @@
         },
         {
             "name": "mauikit",
-             "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "577b999de9ee07e7db26b6686890bed9324d64823c2014315193ed39e183e355",
-                    "url": "https://download.kde.org/stable/maui/mauikit/2.1.0/mauikit-2.1.0.tar.xz",
+                    "sha256": "4a771d0d488086391910f2e8b20307116069ba55577d18b35fdbdc4e50b9e9c5",
+                    "url": "https://download.kde.org/stable/maui/mauikit/2.1.1/mauikit-2.1.1.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -58,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/2.1.0/mauikit-filebrowsing-2.1.0.tar.xz",
-                    "sha256": "273171a0148d83540f3a2c73b7b0ef3be14586948f6e829b270e30146bb9af43",
+                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/2.1.1/mauikit-filebrowsing-2.1.1.tar.xz",
+                    "sha256": "daee19e3df3f04a701c7319d9c27d2828146fd9aed3c3897c652781286e72ccc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -75,8 +79,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.1.0/mauikit-accounts-2.1.0.tar.xz",
-                    "sha256": "21bce5964d17eaa548c8e6de0298cd1c76bff495308e8de954e399c7fc2f7f4c",
+                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.1.1/mauikit-accounts-2.1.1.tar.xz",
+                    "sha256": "08b35303dfd9c903cfbf62b90931ec8315d0d62367dbf56c594907f39d3c06b4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -89,12 +93,15 @@
         {
             "name": "vvave",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DBUILD_TESTING=OFF", "-DCMAKE_EXE_LINKER_FLAGS=-lz" ],
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_EXE_LINKER_FLAGS=-lz"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/vvave/2.1.0/vvave-2.1.0.tar.xz",
-                    "sha256": "73215b9fefca98f987845c5d7a9d206be45e16596a0b74d6c76bcadb1483b610",
+                    "url": "https://download.kde.org/stable/maui/vvave/2.1.1/vvave-2.1.1.tar.xz",
+                    "sha256": "3c1d9169009bfae61ad26ee4956ad3eb7303b6f36752ae827bf2ca313c674d4a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,

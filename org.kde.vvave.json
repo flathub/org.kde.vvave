@@ -45,8 +45,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "a73e81b3d1631caa7ef9ca358095dc25704f5bad9851be5ea944717a4040b7d8",
-                    "url": "https://download.kde.org/stable/maui/mauikit/2.1.2/mauikit-2.1.2.tar.xz",
+                    "sha256": "02f72ff76c66a5e0506d2d6b2782272f9331dbdccf1a0a3bcd6e391f287f7b15",
+                    "url": "https://download.kde.org/stable/maui/mauikit/2.2.0/mauikit-2.2.0.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -79,8 +79,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.1.2/mauikit-accounts-2.1.2.tar.xz",
-                    "sha256": "539fc797cf736d971a7902e642840a8083f640220802c599f92893111f29cc02",
+                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.2.0/mauikit-accounts-2.2.0.tar.xz",
+                    "sha256": "51ac05d7c443eda726194a0a9f3d39a24f51ea476380f0026e00f70a613d86f1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -100,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/vvave/2.1.2/vvave-2.1.2.tar.xz",
-                    "sha256": "aeddd31cbd0df6df796983db66c4a2251c8c5dc452d00ff7f63b254406586691",
+                    "url": "https://download.kde.org/stable/maui/vvave/2.2.0/vvave-2.2.0.tar.xz",
+                    "sha256": "babcb57c43f6f7100723534207102675bc1fd9ae0d04f3b278469683189ddc62",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,

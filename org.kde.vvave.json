@@ -90,8 +90,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.2.0/mauikit-accounts-2.2.0.tar.xz",
-                    "sha256": "51ac05d7c443eda726194a0a9f3d39a24f51ea476380f0026e00f70a613d86f1",
+                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.2.1/mauikit-accounts-2.2.1.tar.xz",
+                    "sha256": "101ba726aee5bfd4d0b2a35ca78083021bb7427c3da61f6ccb27f09afef1698e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,

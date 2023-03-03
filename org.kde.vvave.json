@@ -37,13 +37,45 @@
             ]
         },
         {
+            "name": "qtsystems",
+            "buildsystem": "qmake",
+            "config-opts": [
+                "CONFIG+=git_build"
+            ],
+            "build-options": {
+                "env": [
+                    "QMAKEPATH=/app/lib"
+                ]
+            },
+            "build-commands": [
+                "sed 's@\\($(INSTALL_ROOT)\\)/usr@\\1/'${FLATPAK_DEST}'@g' -i $(find . -name Makefile)"
+            ],
+            "post-install": [
+                "sed -i 's/\\([0-9]\\+\\.[0-9]\\+\\)\\.[0-9]\\+ ${_Qt5.*_FIND_VERSION_EXACT}/\\1/' ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt5SystemInfo*/Qt5SystemInfo*Config.cmake",
+                "sed -e 's@PATHS \"${CMAKE_CURRENT_LIST_DIR}/..\" NO_DEFAULT_PATH@PATHS \"${CMAKE_CURRENT_LIST_DIR}/..\" \"/usr/lib/${CMAKE_CXX_LIBRARY_ARCHITECTURE}/cmake/\" NO_DEFAULT_PATH@' -i ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt5SystemInfo*/Qt5SystemInfo*Config.cmake",
+                "sed -e '/^prefix=/ s@/usr@'${FLATPAK_DEST}'@' -i ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/pkgconfig/Qt5SystemInfo*.pc",
+                "sed -e 's@\\($$QT_MODULE_BIN_BASE\\)@\\1 '${FLATPAK_DEST}'/bin @' -i ${FLATPAK_DEST}/lib/mkspecs/modules/qt_lib_systeminfo*.pri",
+                "sed -e 's@\\($$QT_MODULE_INCLUDE_BASE \\)@\\1'${FLATPAK_DEST}'/include @' -i ${FLATPAK_DEST}/lib/mkspecs/modules/qt_lib_systeminfo*.pri",
+                "sed -e 's@$$QT_MODULE_INCLUDE_BASE/@'${FLATPAK_DEST}'/include/@g' -i ${FLATPAK_DEST}/lib/mkspecs/modules/qt_lib_systeminfo*.pri",
+                "sed -e 's@$$QT_MODULE_LIB_BASE@'${FLATPAK_DEST}'/lib@g' -i ${FLATPAK_DEST}/lib/mkspecs/modules/qt_lib_systeminfo*.pri",
+                "ln -sr ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*SystemInfo.so* -t ${FLATPAK_DEST}/lib/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/qtproject/qtsystems/archive/e3332ee38d27a134cef6621fdaf36687af1b6f4a.tar.gz",
+                    "sha256": "5259cf350e5e1f755c53bcba066dd40fea7b20f4e661b0973b24ae46454a9e75"
+                }
+            ]
+        },
+        {
             "name": "mauiman",
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauiman/1.0.1/mauiman-1.0.1.tar.xz",
-                    "sha256": "60400780c5d5478a1e32b3c0515dedfa1fd2f2fb0b150521cd91a9e7275a982b",
+                    "url": "https://download.kde.org/stable/maui/mauiman/1.0.2/mauiman-1.0.2.tar.xz",
+                    "sha256": "c49ea08d4b51efb4c6ab95699e837cd5482edbfbd5e45b462a5811208787726c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 315311,
@@ -62,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "f02424973b9aa6362010380d9882f3465ca3b54d085190afde2c48819e689267",
-                    "url": "https://download.kde.org/stable/maui/mauikit/2.2.1/mauikit-2.2.1.tar.xz",
+                    "sha256": "0b7eb6517e933757b09ad346189bf50d9269d0ca05559bba5f4edbbe26b8d157",
+                    "url": "https://download.kde.org/stable/maui/mauikit/2.2.2/mauikit-2.2.2.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -79,8 +111,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/2.2.1/mauikit-filebrowsing-2.2.1.tar.xz",
-                    "sha256": "2cf46ff4e297849acf11349015a7d81dc77c6421636ad4b1d3fba61b6e85efeb",
+                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/2.2.2/mauikit-filebrowsing-2.2.2.tar.xz",
+                    "sha256": "7949629e7b2ffd61f6d3f3c3f8589c0eb2c575ee2fc2e93b710f043215364036",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -96,8 +128,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.2.1/mauikit-accounts-2.2.1.tar.xz",
-                    "sha256": "101ba726aee5bfd4d0b2a35ca78083021bb7427c3da61f6ccb27f09afef1698e",
+                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.2.2/mauikit-accounts-2.2.2.tar.xz",
+                    "sha256": "48471e61acf61543b9b6dca76b6bafe95b00f041784f55304aaeae528bff3b83",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -117,18 +149,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/vvave/2.2.1/vvave-2.2.1.tar.xz",
-                    "sha256": "e31c9f54b04792c11ee6a655ca0432ad47279c817baaa0329bdd04d508b9e455",
+                    "url": "https://download.kde.org/stable/maui/vvave/2.2.2/vvave-2.2.2.tar.xz",
+                    "sha256": "aea4b0cca897e6206de95b9df1d5e78abf5b577514cb97e792b48dffd2791255",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/maui/vvave/$version/vvave-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "version_order.patch"
                 }
             ]
         }

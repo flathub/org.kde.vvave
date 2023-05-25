@@ -74,8 +74,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauiman/1.0.2/mauiman-1.0.2.tar.xz",
-                    "sha256": "c49ea08d4b51efb4c6ab95699e837cd5482edbfbd5e45b462a5811208787726c",
+                    "url": "https://download.kde.org/stable/maui/mauiman/1.1.0/mauiman-1.1.0.tar.xz",
+                    "sha256": "6523705d9d48dec4bd4cf005d2b18371e2a4a0d774415205dff11378eee6468f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 315311,
@@ -94,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "0b7eb6517e933757b09ad346189bf50d9269d0ca05559bba5f4edbbe26b8d157",
-                    "url": "https://download.kde.org/stable/maui/mauikit/2.2.2/mauikit-2.2.2.tar.xz",
+                    "sha256": "de7381e957d61f6e81bca1349f12f4a992ded3010083c4aa4b35a9f6387325d9",
+                    "url": "https://download.kde.org/stable/maui/mauikit/3.0.0/mauikit-3.0.0.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -111,8 +111,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/2.2.2/mauikit-filebrowsing-2.2.2.tar.xz",
-                    "sha256": "7949629e7b2ffd61f6d3f3c3f8589c0eb2c575ee2fc2e93b710f043215364036",
+                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/3.0.0/mauikit-filebrowsing-3.0.0.tar.xz",
+                    "sha256": "d3df8154a156d14f83367d609eafd5cf0f57cb06ef57e8348bd7c046388f0d0f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -128,8 +128,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/2.2.2/mauikit-accounts-2.2.2.tar.xz",
-                    "sha256": "48471e61acf61543b9b6dca76b6bafe95b00f041784f55304aaeae528bff3b83",
+                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/3.0.0/mauikit-accounts-3.0.0.tar.xz",
+                    "sha256": "fb39a0ae0ac89e991ef952299a13a0bdd1fef6f8abdce516b7da61b869fec739",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -149,8 +149,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/vvave/2.2.2/vvave-2.2.2.tar.xz",
-                    "sha256": "aea4b0cca897e6206de95b9df1d5e78abf5b577514cb97e792b48dffd2791255",
+                    "url": "https://download.kde.org/stable/maui/vvave/3.0.0/vvave-3.0.0.tar.xz",
+                    "sha256": "c8c53df23cf9761cfa2cfb3f681db49b6e136a2f13d5464c7f534c3c585d5bf4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,

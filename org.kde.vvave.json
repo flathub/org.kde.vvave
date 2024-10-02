@@ -90,8 +90,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauiman/3.1.0/mauiman-3.1.0.tar.xz",
-                    "sha256": "5c741f1fcff75f4c69fd8ef86cd428930254222cf7f58b87cad228ba3a92c290",
+                    "url": "https://download.kde.org/stable/maui/mauiman/4.0.0/mauiman-4.0.0.tar.xz",
+                    "sha256": "628a6e85c48e699ef1b57ad8b52e994c32824f687ca11155e2ea8437ae0cb233",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 315311,
@@ -127,8 +127,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/3.1.0/mauikit-filebrowsing-3.1.0.tar.xz",
-                    "sha256": "77f7a531e4ed9643bf3bdcb8bd493973c1bb285f54aaaf822b024fb23075d190",
+                    "url": "https://download.kde.org/stable/maui/mauikit-filebrowsing/4.0.0/mauikit-filebrowsing-4.0.0.tar.xz",
+                    "sha256": "b93edb5b07fd1fd74f4b46d5bb1402c57370728038e7e407dba1be3730f1da2e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -165,8 +165,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/vvave/3.1.0/vvave-3.1.0.tar.xz",
-                    "sha256": "34c0762a2ed208b5b39999d8cb55de445dfdefedd0d49e8c4790e08cf3dfe6c5",
+                    "url": "https://download.kde.org/stable/maui/vvave/4.0.0/vvave-4.0.0.tar.xz",
+                    "sha256": "b846c0a155d7689f3931c29285b8ec28ed7a39c94247c08b6c02ba97a58e534d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,

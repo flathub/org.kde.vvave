@@ -2,7 +2,7 @@
     "id": "org.kde.vvave",
     "rename-icon": "vvave",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "6.7",
     "sdk": "org.kde.Sdk",
     "command": "vvave",
     "finish-args": [
@@ -49,38 +49,6 @@
                         "stable-only": true,
                         "url-template": "https://taglib.github.io/releases/taglib-$version.tar.gz"
                     }
-                }
-            ]
-        },
-        {
-            "name": "qtsystems",
-            "buildsystem": "qmake",
-            "config-opts": [
-                "CONFIG+=git_build"
-            ],
-            "build-options": {
-                "env": [
-                    "QMAKEPATH=/app/lib"
-                ]
-            },
-            "build-commands": [
-                "sed 's@\\($(INSTALL_ROOT)\\)/usr@\\1/'${FLATPAK_DEST}'@g' -i $(find . -name Makefile)"
-            ],
-            "post-install": [
-                "sed -i 's/\\([0-9]\\+\\.[0-9]\\+\\)\\.[0-9]\\+ ${_Qt5.*_FIND_VERSION_EXACT}/\\1/' ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt5SystemInfo*/Qt5SystemInfo*Config.cmake",
-                "sed -e 's@PATHS \"${CMAKE_CURRENT_LIST_DIR}/..\" NO_DEFAULT_PATH@PATHS \"${CMAKE_CURRENT_LIST_DIR}/..\" \"/usr/lib/${CMAKE_CXX_LIBRARY_ARCHITECTURE}/cmake/\" NO_DEFAULT_PATH@' -i ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt5SystemInfo*/Qt5SystemInfo*Config.cmake",
-                "sed -e '/^prefix=/ s@/usr@'${FLATPAK_DEST}'@' -i ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/pkgconfig/Qt5SystemInfo*.pc",
-                "sed -e 's@\\($$QT_MODULE_BIN_BASE\\)@\\1 '${FLATPAK_DEST}'/bin @' -i ${FLATPAK_DEST}/lib/mkspecs/modules/qt_lib_systeminfo*.pri",
-                "sed -e 's@\\($$QT_MODULE_INCLUDE_BASE \\)@\\1'${FLATPAK_DEST}'/include @' -i ${FLATPAK_DEST}/lib/mkspecs/modules/qt_lib_systeminfo*.pri",
-                "sed -e 's@$$QT_MODULE_INCLUDE_BASE/@'${FLATPAK_DEST}'/include/@g' -i ${FLATPAK_DEST}/lib/mkspecs/modules/qt_lib_systeminfo*.pri",
-                "sed -e 's@$$QT_MODULE_LIB_BASE@'${FLATPAK_DEST}'/lib@g' -i ${FLATPAK_DEST}/lib/mkspecs/modules/qt_lib_systeminfo*.pri",
-                "ln -sr ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/libQt*SystemInfo.so* -t ${FLATPAK_DEST}/lib/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/qtproject/qtsystems/archive/e3332ee38d27a134cef6621fdaf36687af1b6f4a.tar.gz",
-                    "sha256": "5259cf350e5e1f755c53bcba066dd40fea7b20f4e661b0973b24ae46454a9e75"
                 }
             ]
         },

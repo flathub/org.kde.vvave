@@ -110,8 +110,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "bf5216cbb93767e0e54ac11f02e057a0a93173f8c10354ccf7eece568356f6ec",
-                    "url": "https://download.kde.org/stable/maui/mauikit/3.1.0/mauikit-3.1.0.tar.xz",
+                    "sha256": "a5fbc22f5b19b11b569c8a9585c2e3b64d3226f7bf8f4b92014953403d10e1d2",
+                    "url": "https://download.kde.org/stable/maui/mauikit/4.0.0/mauikit-4.0.0.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,
@@ -144,8 +144,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/3.1.0/mauikit-accounts-3.1.0.tar.xz",
-                    "sha256": "ca3b3f0861d80ce5e1e48bbf79e5db2fb4db2f907ad66312a94233b29bac9f2e",
+                    "url": "https://download.kde.org/stable/maui/mauikit-accounts/4.0.0/mauikit-accounts-4.0.0.tar.xz",
+                    "sha256": "28461b6155c770eaf10ec01e6c0fd07103ef2be23036f2d43a8e5f3321b432ef",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242845,

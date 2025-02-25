@@ -141,6 +141,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/maui/vvave/$version/vvave-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "b237530d550e1a8e0cacd7d99d6a04efe47606f5.patch"
                 }
             ]
         }

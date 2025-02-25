@@ -1,0 +1,25 @@
+From b237530d550e1a8e0cacd7d99d6a04efe47606f5 Mon Sep 17 00:00:00 2001
+From: Justin Zobel <justin.zobel@gmail.com>
+Date: Tue, 25 Feb 2025 14:35:11 +1030
+Subject: [PATCH] Appdata: Add Developer ID
+
+---
+ org.kde.vvave.appdata.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/org.kde.vvave.appdata.xml b/org.kde.vvave.appdata.xml
+index cdc638b1..1acf0cc5 100644
+--- a/org.kde.vvave.appdata.xml
++++ b/org.kde.vvave.appdata.xml
+@@ -85,7 +85,7 @@
+   <summary xml:lang="x-test">xxPlay your music collectionxx</summary>
+   <summary xml:lang="zh-CN">播放您收藏的音乐</summary>
+   <summary xml:lang="zh-TW">播放您的音樂收藏</summary>
+-  <developer>
++  <developer id="org.mauikit">
+     <name>maui</name>
+     <url>https://mauikit.org/</url>
+   </developer>
+-- 
+GitLab
+

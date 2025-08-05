@@ -6,14 +6,14 @@
     "sdk": "org.kde.Sdk",
     "command": "vvave",
     "finish-args": [
-        "--share=ipc",
-        "--share=network",
-        "--socket=fallback-x11",
-        "--socket=wayland",
         "--device=dri",
         "--filesystem=home",
         "--own-name=org.mpris.MediaPlayer2.vvave",
-        "--socket=pulseaudio"
+        "--share=ipc",
+        "--share=network",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--socket=wayland"
     ],
     "modules": [
         {

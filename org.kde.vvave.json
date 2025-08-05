@@ -15,6 +15,12 @@
         "--socket=pulseaudio",
         "--socket=wayland"
     ],
+    "cleanup": [
+        "/include",
+        "/lib/*.a",
+        "/lib/cmake",
+        "/lib/pkgconfig"
+    ],
     "modules": [
         {
             "name": "utfcpp",

@@ -2,18 +2,24 @@
     "id": "org.kde.vvave",
     "rename-icon": "vvave",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.8",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "vvave",
     "finish-args": [
-        "--share=ipc",
-        "--share=network",
-        "--socket=fallback-x11",
-        "--socket=wayland",
         "--device=dri",
         "--filesystem=home",
         "--own-name=org.mpris.MediaPlayer2.vvave",
-        "--socket=pulseaudio"
+        "--share=ipc",
+        "--share=network",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--socket=wayland"
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/*.a",
+        "/lib/cmake",
+        "/lib/pkgconfig"
     ],
     "modules": [
         {

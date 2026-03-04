@@ -23,22 +23,6 @@
     ],
     "modules": [
         {
-            "name": "utfcpp",
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.9.tar.gz",
-                    "sha256": "397a9a2a6ed5238f854f490b0177b840abc6b62571ec3e07baa0bb94d3f14d5a",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 20545,
-                        "url-template": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "mauiman",
             "buildsystem": "cmake-ninja",
             "sources": [
